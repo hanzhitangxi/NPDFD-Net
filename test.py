@@ -8,7 +8,7 @@ from time import time
 import importlib
 
 # set the path of test model
-model_path = './epochs/model_path47.pth'
+model_path = './modle/r10.pth'
 parser = argparse.ArgumentParser(description='NPDFDNet')
 parser.add_argument('--model', type=str, default='NPDFDNet')
 parser.add_argument('--cpu', action='store_true', help='use cpu only')
