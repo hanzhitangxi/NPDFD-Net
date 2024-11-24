@@ -10,5 +10,5 @@ Training the model can be found in https://pan.baidu.com/s/1kf33dNtbTZNbTBEMH-cD
 
 test
 =
-To convert images into .mat format, you can use the provided script generate_test_mat.m located in the ./dataset directory. 
+To convert images into .mat format, you can use the provided script 'generate_test_mat.m' located in the ./dataset directory. 
 After preparing the data, you can use test.py to perform testing.
