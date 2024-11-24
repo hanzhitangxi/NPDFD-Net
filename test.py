@@ -8,12 +8,12 @@ from time import time
 import importlib
 
 # set the path of test model
-model_path = './modle/r10.pth'
+model_path = './modle/r0.01.pth'
 parser = argparse.ArgumentParser(description='NPDFDNet')
 parser.add_argument('--model', type=str, default='NPDFDNet')
 parser.add_argument('--cpu', action='store_true', help='use cpu only')
-parser.add_argument('--sampling_rate', type=str, default='10', help='save reconstruct images')
-parser.add_argument('--sampling_point', type=int, default=102, help='save reconstruct images')  # 1% - 10 4% - 41 10% - 102 25% - 256 30% - 307 40% - 410 50% - 512
+parser.add_argument('--sampling_rate', type=str, default='1', help='save reconstruct images')
+parser.add_argument('--sampling_point', type=int, default=10, help='save reconstruct images')  # 1% - 10 4% - 41 10% - 102 25% - 256 30% - 307 40% - 410 50% - 512
 parser.add_argument('--dir_data', type=str, default='./dataset/', help='dataset directory')
 parser.add_argument('--dir', type=str, default='./res_images/', help='save reconstruct images')
 parser.add_argument('--data_test', type=str, default='Set11', help='test dataset name,Set5+Set14+BSDS100+Set11')
